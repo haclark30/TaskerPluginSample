@@ -48,6 +48,7 @@ abstract class IntentServiceParallel(val name: String) : Service() {
     /**
      * Main function of the class. Starts processing each new task in parallel with existing tasks. When all tasks are processed will stop itself. Will ignore null intents.
      */
+    @Deprecated("Deprecated in Java")
     override fun onStart(intent: Intent?, startId: Int) {
         if (intent == null) return
 

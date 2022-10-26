@@ -1,11 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.joaomgcd.taskerpluginlibrary">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application>
 
         <receiver
-            android:name=".action.BroadcastReceiverAction"
+            android:name="com.joaomgcd.taskerpluginlibrary.action.BroadcastReceiverAction"
             android:exported="true"
             tools:ignore="ExportedReceiver">
             <intent-filter>
@@ -14,7 +13,7 @@
         </receiver>
 
         <service
-            android:name=".action.IntentServiceAction"
+            android:name="com.joaomgcd.taskerpluginlibrary.action.IntentServiceAction"
             android:exported="true"
             tools:ignore="ExportedService">
             <intent-filter>
@@ -22,7 +21,7 @@
             </intent-filter>
         </service>
         <service
-            android:name=".condition.IntentServiceCondition"
+            android:name="com.joaomgcd.taskerpluginlibrary.condition.IntentServiceCondition"
             android:exported="true"
             tools:ignore="ExportedService">
             <intent-filter>
@@ -31,7 +30,7 @@
         </service>
 
         <receiver
-            android:name=".condition.BroadcastReceiverCondition"
+            android:name="com.joaomgcd.taskerpluginlibrary.condition.BroadcastReceiverCondition"
             android:exported="true"
             tools:ignore="ExportedReceiver">
             <intent-filter>
